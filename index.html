@@ -128,7 +128,7 @@
 			  	</div>
 			  </section>
 			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  	<div style="background-color: #FFFFFF; opacity: 0.6">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
 				  	<h2 style="color: #FE4101">Partes del algoritmo</h2>
 				  	<ul style="color: #FE4101">
 					  <li class="fragment" data-fragment-index="0">Especificación de una solución.</li>
@@ -140,7 +140,7 @@
 				</div>
 			  </section>
 			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  	<div style="background-color: #FFFFFF; opacity: 0.6">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
 			  		<h2 style="color: #FE4101">Especificación de una solución</h2>
 			  		<div style="color: #FE4101">
 			  			Para especificar una solución, podemos obtar por varias formas, que pueden llegar a influir en la capacidad del algoritmo para hayar buenos resultados, la compljejidad de este, etc.
@@ -148,7 +148,7 @@
 			  	</div>
 			  </section>
 			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  <div style="background-color: #FFFFFF; opacity: 0.6">
+			  <div style="background-color: #FFFFFF; opacity: 0.7">
 			  		<h3 style="color: #FE4101">Codificaciones más básicas</h3>
 			  			<ul style="color: #FE4101">
 						  <li class="fragment" data-fragment-index="0"><b>Especificación binaria</b>: útil para problemas de toma de decisiones de tipo <b>SI/NO</b>.<p>[0, 1, 0, 1, ..., 0, 1, 0, 1]</p></li>
@@ -157,7 +157,7 @@
 			  		</div>
 			  </section>
 			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  	<div style="background-color: #FFFFFF; opacity: 0.6">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
 			  		<h2 style="color: #FE4101">Conjunto de Soluciones</h2>
 			  		<div style="color: #FE4101">Este conjunto de soluciones tiene un tamaño, generalmente fijo, pero puede tener el tamaño que queramos.</div>
 			  		<div style="color: #FE4101">Hay que tener en cuenta, que a mayor nº de individuos, más diversidad tendrá y mejor explorará el espacio de búsqueda, obteniendo mejores soluciones.</div>
@@ -165,7 +165,7 @@
 			  	</div>
 			  </section>
 			   <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  	<div style="background-color: #FFFFFF; opacity: 0.6">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
 			  		<div style="color: #FE4101">Cuanto mayor sea el número de individuos, más tardará el algoritmo en converger, por lo tanto, necesita más iteraciones.</div>
 			  		<div style="color: #FE4101">Lo que implica más iteraciones, más cálculos, más memoria, <b>más tiempo</b>.</div>
 
@@ -173,7 +173,7 @@
 			  	</div>
 			  </section>
 			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  	<div style="background-color: #FFFFFF; opacity: 0.6">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
 			  		<h2 style="color: #FE4101">Compromiso Eficacia-Eficiencia</h2>
 			  		<div style="color: #FE4101">
 			  			Encontrar un compromiso adecuado entre el tiempo de cálculo y uso de recursos con la  la calidad de los resultados que obtenemos.
@@ -184,14 +184,53 @@
 			  	</div>
 			  </section>
 			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
-			  	<div style="background-color: #FFFFFF; opacity: 0.6">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
 			  		<h2 style="color: #FE4101">Operador de cruce</h2>
 			  		<div style="color: #FE4101">
-			  			Es la función que recibe dos soluciones candidatas como padres, y realiza una operación de cruce de los cromosomas que conforman las soluciones padre, generando nuevas soluciones que cumplen con las restricciones que tenga el problema.
+			  			Dados dos padres, realiza una operación de cruce entre sus cromosomas generando nuevas soluciones candidatas que cumplan con las restricciones.
 			  		</div>
 			  		<div style="color: #FE4101">
-			  		 	Al igual que con la codificación de las soluciones, qué método de cruce usar depende de la especificación para las soluciones y el tipo de problema, pudiendo afectar a 
+			  		 	El método a usar depende de la especificación de las soluciones y el tipo de problema.
 			  		</div>
+			  	</div>
+			  </section>
+			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
+			  		<h2 style="color: #FE4101">Operador de cruce</h2>
+			  		<ul style="color: #FE4101">
+					  <li class="fragment" data-fragment-index="0"><b>Basado en posición</b>: mantiene las posiciones comunes de las dos soluciones y el resto, aleatorio.</li>
+					  <div class="fragment" data-fragment-index="1" align="center">
+					   <img src="images/2.png" style="align-content: center;"> 
+					  </div>
+					</ul>
+			  	</div>
+			  </section>
+			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
+			  		<h2 style="color: #FE4101">Operador de cruce</h2>
+			  		<ul style="color: #FE4101">
+					  <li class="fragment" data-fragment-index="0"><b>Cruce PMX</b>: mantiene una mayor descendencia directa con los padres manteniendo bloques inmutables e intercambiando el resto de la solución con el otro padre.</li>
+					  <div class="fragment" data-fragment-index="1" align="center">
+					   <img src="images/1.png" style="align-content: center;"> 
+					  </div>
+					</ul>
+			  	</div>
+			  </section>
+			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
+			  		<h2 style="color: #FE4101">Operador de Mutación</h2>
+			  		<div style="color: #FE4101">
+					  Introduce un cambio aleatorio en la solución descendiente. Este operador tiene que tener una probabildad muy baja de actuar, ya que afecta mucho a la convergencia del algoritmo.
+					</div>
+			  	</div>
+			  </section>
+			  <section data-transition="zoom" data-background-image="images/ossryggkso4-vadim-sherbakov.jpg">
+			  	<div style="background-color: #FFFFFF; opacity: 0.7">
+			  		<h2 style="color: #FE4101">Función de evaluación</h2>
+			  		<ul style="color: #FE4101">
+					  <li>Nos indica cómo de buena es una solución. Será altamente dependiente del problema, y es el paso más costoso del algoritmo.</li>
+					  <li>En esta función se pueden introducir las restricciones como penalización.</li>
+					</ul>
 			  	</div>
 			  </section>
 			</div>
